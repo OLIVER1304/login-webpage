@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="../css/登录页面.css">
+    <script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+
+    <div class="squaer">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="circle">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <form class="login">
+        <h1>登录</h1>
+        <input id="input1" type="text" placeholder="手机" onfocus="this.placeholder=' '" onblur="this.placeholder='手机'">
+        <input id="input2" type="password" placeholder="密码" onfocus="this.placeholder=' '" onblur="this.placeholder='密码'">
+        <div>
+            <input type="checkbox">
+            <p class="rem">记住密码</p>
+        </div>
+
+        <div class="btn">
+            <span class="btn-"><a href="#findpassword">忘记密码</a></span>
+            <span class="btn-"><a href="#signin">注册</a></span>
+        </div>
+        <input class="l" type="submit" value="提交" onclick="return my_func1()">
+    </form>
+
+    <div id="findpassword" class="findpassword">
+        <div>
+            <a href="#" class="window-close">x</a>
+            <h2 class="title">找回密码</h2>
+            <a href="#signin">注册</a>
+            <form class="content1">
+                <input id="input3" type="text" placeholder="用户名" onfocus="this.placeholder=' '" onblur="this.placeholder='用户名'">
+                <input id="input4" type="text" placeholder="手机" onfocus="this.placeholder=' '" onblur="this.placeholder='手机'">
+                <input id="input5" type="text" placeholder="邮箱" onfocus="this.placeholder=' '" onblur="this.placeholder='邮箱'">
+                <input id="input6" type="password" placeholder="密码" onfocus="this.placeholder=' '" onblur="this.placeholder='密码'">
+                <button class="confrm" onclick="return my_func2()">确定</button>
+            </form>
+        </div>
+    </div>
+    <div id="signin" class="signin">
+        <div>
+            <a href="#" class="window-close">x</a>
+            <h2 class="title">注册</h2>
+            <a href="#findpassword">忘记密码</a>
+            <form class="content2">
+                <input id="input7" type="text" placeholder="用户名" onfocus="this.placeholder=' '" onblur="this.placeholder='用户名'">
+                <input id="input8" type="text" placeholder="手机" onfocus="this.placeholder=' '" onblur="this.placeholder='手机'">
+                <input id="input9" type="text" placeholder="邮箱" onfocus="this.placeholder=' '" onblur="this.placeholder='邮箱'">
+                <input id="input10" type="password" placeholder="密码" onfocus="this.placeholder=' '" onblur="this.placeholder='密码'">
+                <button class="confrm" onclick="return my_func3()">确定</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
